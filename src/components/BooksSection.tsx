@@ -1,6 +1,6 @@
-import coverSombras from "@/assets/cover-sombras.jpg";
-import coverMar from "@/assets/cover-mar.jpg";
-import coverGuardia from "@/assets/cover-guardia.jpg";
+import mockupSombras from "@/assets/mockup-sombras.png";
+import mockupMar from "@/assets/mockup-mar.png";
+import mockupGuardia from "@/assets/mockup-guardia.png";
 import videoSombras from "@/assets/video-sombras.mp4.asset.json";
 import videoMar from "@/assets/video-mar.mp4.asset.json";
 import videoGuardia from "@/assets/video-guardia.mp4.asset.json";
@@ -12,7 +12,7 @@ const books = [
     id: "sombras",
     title: "Nas Sombras da Lembrança",
     genre: "Suspense Psicológico",
-    cover: coverSombras,
+    cover: mockupSombras,
     video: videoSombras.url,
     overlayClass: "bg-gradient-to-r from-[hsl(0_0%_3%/0.92)] via-[hsl(0_0%_5%/0.85)] to-[hsl(0_0%_3%/0.75)]",
     synopsis:
@@ -22,7 +22,7 @@ const books = [
     id: "mar",
     title: "O Mar Sempre Devolve Seus Mortos",
     genre: "Suspense Policial",
-    cover: coverMar,
+    cover: mockupMar,
     video: videoMar.url,
     overlayClass: "bg-gradient-to-r from-[hsl(0_60%_8%/0.92)] via-[hsl(355_50%_12%/0.85)] to-[hsl(0_45%_8%/0.78)]",
     synopsis:
@@ -32,7 +32,7 @@ const books = [
     id: "guardia",
     title: "A Última Guardiã de Camões",
     genre: "Romance Histórico",
-    cover: coverGuardia,
+    cover: mockupGuardia,
     video: videoGuardia.url,
     overlayClass: "bg-gradient-to-r from-[hsl(30_20%_5%/0.88)] via-[hsl(35_15%_8%/0.80)] to-[hsl(30_10%_5%/0.70)]",
     synopsis:
@@ -98,15 +98,12 @@ const BooksSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-3 bg-gold-gradient rounded-sm opacity-20 blur-xl" />
-              <img
-                src={book.cover}
-                alt={book.title}
-                className="relative w-56 md:w-72 shadow-2xl rounded-sm transition-all duration-500"
-                loading="lazy"
-              />
-            </div>
+            <img
+              src={book.cover}
+              alt={book.title}
+              className="w-64 md:w-80 drop-shadow-2xl transition-all duration-500"
+              loading="lazy"
+            />
           </div>
 
           <div className="space-y-5">
