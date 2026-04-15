@@ -16,7 +16,7 @@ const Navbar = () => {
     { label: "Início", href: "#inicio" },
     { label: "Livro Premiado", href: "#premiado" },
     { label: "Obras", href: "#obras" },
-    { label: "Sobre", href: "#autoridade" },
+    { label: "Sobre Mim", href: "#sobre" },
     { label: "Contato", href: "#contato" },
   ];
 
