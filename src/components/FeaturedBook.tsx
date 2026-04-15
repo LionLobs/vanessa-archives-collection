@@ -1,4 +1,4 @@
-import coverGuardia from "@/assets/cover-guardia.jpg";
+import mockupGuardia from "@/assets/mockup-guardia.png";
 import videoGuardia from "@/assets/video-guardia.mp4.asset.json";
 import quill from "@/assets/quill-divider.png";
 
@@ -35,15 +35,12 @@ const FeaturedBook = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-3 bg-gold-gradient rounded-sm opacity-20 blur-xl" />
-              <img
-                src={coverGuardia}
-                alt="A Última Guardiã de Camões"
-                className="relative w-64 md:w-80 shadow-2xl rounded-sm"
-                loading="lazy"
-              />
-            </div>
+            <img
+              src={mockupGuardia}
+              alt="A Última Guardiã de Camões"
+              className="w-72 md:w-96 drop-shadow-2xl"
+              loading="lazy"
+            />
           </div>
 
           <div className="space-y-6">

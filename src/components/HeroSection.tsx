@@ -22,20 +22,13 @@ const HeroSection = () => {
         </div>
 
         <h1
-          className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 animate-fade-up"
+          className="font-elegant text-2xl md:text-4xl lg:text-5xl italic leading-tight mb-8 animate-fade-up text-foreground/90"
           style={{ animationDelay: "0.4s" }}
         >
-          <span className="text-foreground">Vanessa </span>
-          <span className="text-gold-gradient">Clasen</span>
+          Cada palavra nasce à mão, em tinta e silêncio —
+          <br />
+          <span className="text-gold-gradient">como quem escreve cartas que o tempo nunca apaga.</span>
         </h1>
-
-        <p
-          className="font-elegant text-xl md:text-2xl text-foreground/50 italic mb-12 animate-fade-up leading-relaxed"
-          style={{ animationDelay: "0.6s" }}
-        >
-          Cada palavra nasce à mão, em tinta e silêncio —<br />
-          como quem escreve cartas que o tempo nunca apaga.
-        </p>
 
         <div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 animate-fade-up"
